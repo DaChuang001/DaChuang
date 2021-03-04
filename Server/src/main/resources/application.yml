@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    name: game
+    #url: jdbc:mysql://localhost:3306/stuinfo
+    url: jdbc:mysql://localhost:3306/game?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 78089091
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mybatis:
+  mapper-locations: classpath*:com/example/demo/mapper/*.xml
+  type-aliases-package: com.example.demo.bean
+
+
+
+
