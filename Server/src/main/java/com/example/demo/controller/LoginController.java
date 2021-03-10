@@ -22,6 +22,8 @@ public class LoginController {
     @RequestMapping(value = "/user/login",method = RequestMethod.POST)
     @ResponseBody
     public String login(@RequestBody UserBean user){
+        System.out.println("进来了吗");
+        System.out.println(user.getIduser());
         ArrayList<UserBean> userBean= userService.loginIn(user.getIduser(),user.getPassword());
         return getUser(userBean);
     }

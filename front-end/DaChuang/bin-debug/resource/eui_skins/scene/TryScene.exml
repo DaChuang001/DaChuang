@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TrySceneSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="17801967824" ></w:Config>
+	<e:Image source="bg_jpg" x="0" y="0" anchorOffsetX="0" width="397.57" anchorOffsetY="0" height="739.03"/>
+</e:Skin>
