@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneBeginSkin" width="1440" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1780181993d" ></w:Config>
+	<e:Image id="bgpic" source="dormitory_jpg" x="0" y="0" width="1451.25" height="911.536"/>
+	<e:Image source="text_png" x="0" y="666" height="234" width="1440"/>
+	<e:Image id="character" source="queen_png" x="0" y="666"/>
+</e:Skin>

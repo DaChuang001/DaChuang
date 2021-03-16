@@ -1,15 +1,25 @@
 {
-  "1780181993d": {
-    "path": "scene\\SceneBegin.ts",
-    "class": "SceneBegin",
-    "parentPath": "",
-    "backgroundType": "null",
-    "backgroundX": 0,
-    "backgroundY": 0,
-    "backgroundWidth": -1,
-    "backgroundHeight": -1,
-    "useBgImage": true,
-    "useBgColor": true,
-    "backgroundAlpha": 100
-  }
+    "1780181993d": {
+        "path": "scene\\SceneBegin.ts",
+        "class": "SceneBegin",
+        "parentPath": "",
+        "backgroundType": "null",
+        "backgroundX": 0,
+        "backgroundY": 0,
+        "backgroundWidth": -1,
+        "backgroundHeight": -1,
+        "useBgImage": true,
+        "useBgColor": true,
+        "backgroundAlpha": 100
+    },
+    "17821c66c2e": {
+        "path": "scene\\Dormitory.ts",
+        "class": "Dormitory",
+        "parentPath": ""
+    },
+    "1783b580247": {
+        "path": "scene\\grassGame.ts",
+        "class": "grassGame",
+        "parentPath": ""
+    }
 }

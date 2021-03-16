@@ -14,7 +14,8 @@
 		"eui.VSlider": "resource/eui_skins/VSliderSkin.exml",
 		"eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml",
 		"SceneBegin": "resource/scene/SceneBegin.exml",
-		"TryScene": "resource/scene/TryScene.exml"
+		"TryScene": "resource/scene/TryScene.exml",
+		"Dormitory": "resource/eui_skins/scene/Dormitory.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -26,6 +27,7 @@
 		"resource/eui_skins/PanelSkin.exml",
 		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/eui_skins/RadioButtonSkin.exml",
+		"resource/eui_skins/scene/Dormitory.exml",
 		"resource/eui_skins/scene/SceneBegin.exml",
 		"resource/eui_skins/scene/TryScene.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
