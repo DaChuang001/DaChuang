@@ -28,9 +28,11 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 import {SceneBegin} from "./scene/SceneBegin"
+import {SceneBsDialog} from "./scene/SceneBsDialog"
 
 class Main extends eui.UILayer {
 
+    //用来显示请求发送状态的label
     private statusPostLabel: egret.TextField;
      /// 当前随机短语的索引
     private _idxPrevFocus:number;
@@ -149,11 +151,11 @@ class Main extends eui.UILayer {
         this.addChild(this.colorLabel);
         
         /// 轻触舞台以改变位图文本所用文字
-        this.stage.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+        this.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
             this.updateBitmapTextContent();
         }, this );
         
-        this.updateBitmapTextContent();
+        //this.updateBitmapTextContent();
 
         let textfield = new egret.TextField();
         this.addChild(textfield);
@@ -177,6 +179,7 @@ class Main extends eui.UILayer {
     
      /// 用户交互触发位图文本内容变更
      private updateBitmapTextContent(){
+         //console.log("no...");
          if( this._idxPrevFocus==4 ){     /// 避免与之前选择短语雷同
              this._idxPrevFocus=0;
          }
@@ -236,35 +239,36 @@ class Main extends eui.UILayer {
      */
     private onButtonClick(e: egret.TouchEvent) {
         //发送请求
-        var statusPostLabel = new egret.TextField();
-        this.addChild(statusPostLabel);
-        statusPostLabel.size = 18;
-        statusPostLabel.x = 300;
-        statusPostLabel.y = 40;
-        statusPostLabel.text = "Sending POST request to httpbin.org";
+        // var statusPostLabel = new egret.TextField();
+        // this.addChild(statusPostLabel);
+        // statusPostLabel.size = 18;
+        // statusPostLabel.x = 300;
+        // statusPostLabel.y = 40;
+        // statusPostLabel.text = "Sending POST request to httpbin.org";
         
 
-        var obj = { password:"123123", iduser:1};
-        var request = new egret.HttpRequest();
-        request.responseType = egret.HttpResponseType.TEXT;
-        request.open("http://localhost:9092/user/login",egret.HttpMethod.POST);
-        request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-        var papa=JSON.stringify(obj)
-        request.send(papa);
-        request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
-        request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
-        request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
+        // var obj = { password:"123123", iduser:1};
+        // var request = new egret.HttpRequest();
+        // request.responseType = egret.HttpResponseType.TEXT;
+        // request.open("http://localhost:9092/user/login",egret.HttpMethod.POST);
+        // request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        // var papa=JSON.stringify(obj)
+        // request.send(papa);
+        // request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
+        // request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
+        // request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
 
-        let panel = new eui.Panel();
-        panel.title = "Title";
-        panel.horizontalCenter = 0;
-        panel.verticalCenter = 0;
-        this.addChild(panel);
-        // this.parent.addChild(new SceneBegin());
-        // this.parent.removeChild(this);
+        // let panel = new eui.Panel();
+        // panel.title = "Title";
+        // panel.horizontalCenter = 0;
+        // panel.verticalCenter = 0;
+        // this.addChild(panel);
+
+
+        this.parent.addChild(new SceneBsDialog());
+        this.parent.removeChild(this);
        
-        //this.parent.removeChild(this)
-        //this.parent.addChild(new SceneBegin())
+    
     }
 
     private onPostComplete(event:egret.Event):void {

@@ -30,6 +30,18 @@ declare module skins{
 	class RadioButtonSkin extends eui.Skin{
 	}
 }
+declare module skins{
+	class BS_dialog extends eui.Skin{
+	}
+}
+declare module skins{
+	class BS_gama extends eui.Skin{
+	}
+}
+declare module skins{
+	class myButton extends eui.Skin{
+	}
+}
 declare class SceneBeginSkin extends eui.Skin{
 }
 declare class TrySceneSkin extends eui.Skin{

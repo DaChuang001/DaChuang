@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.myButton"
+	height="80" xmlns:e="http://ns.egret.com/eui" width="200">
+	<e:Image source="myButton_png" x="0" y="0" width="200" height="80" touchEnabled="true"/>
+	<e:Label id="buttonText" text="开始尝试" touchEnabled="true" size="30" verticalAlign="middle" horizontalCenter="0" verticalCenter="0" width="120" height="40"/>
+</e:Skin>
