@@ -21,5 +21,15 @@
         "path": "scene\\grassGame.ts",
         "class": "grassGame",
         "parentPath": ""
+    },
+    "178459404f9": {
+        "path": "..\\resource\\eui_skins\\scene\\RoomateScene.ts",
+        "class": "RoomateScene",
+        "parentPath": ""
+    },
+    "17845e85448": {
+        "path": "scene\\finalRoom.ts",
+        "class": "finalRoom",
+        "parentPath": ""
     }
 }

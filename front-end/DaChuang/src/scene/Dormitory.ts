@@ -11,12 +11,11 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
 		this.skinName="resource/eui_skins/scene/Dormitory.exml"
-		this._idxPrevFocus=-1;
+		this._idxPrevFocus=0;
 		// 获取进度
 		
 		this.character.source="queen_png";
-		this.bgpic.source="dormitory_jpg";
-		
+		this.bgpic.source="dormitory_jpg";		
 
 		this.characterName=new eui.Label();
 		this.characterName.textColor = 0xffffff;
@@ -35,6 +34,7 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
         this.textLabel.x = 331;
         this.textLabel.y = 750;
         this.addChild(this.textLabel);
+		this.textLabel.text="！！你是谁，怎么会闯入这里？来人...";
 	    
 
 		this.addEventListener(egret.TouchEvent.TOUCH_TAP,this.updateTextContent,this);

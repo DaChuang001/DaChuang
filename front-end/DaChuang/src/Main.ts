@@ -258,8 +258,10 @@ class Main extends eui.UILayer {
         panel.horizontalCenter = 0;
         panel.verticalCenter = 0;
         this.addChild(panel);
-        // this.parent.addChild(new Dormitory());
-        this.parent.addChild(new grassGame());
+        this.parent.addChild(new Dormitory());
+        // this.parent.addChild(new grassGame());
+        // this.parent.addChild(new RoomateScene());
+        // this.parent.addChild(new manMove());
         this.parent.removeChild(this);
     }
 

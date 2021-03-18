@@ -1,4 +1,5 @@
 class SceneBegin extends eui.Component implements  eui.UIComponent {
+	
 	public constructor() {
 		super();
 		this.skinName="resource/eui_skins/scene/SceneBegin.exml"
@@ -16,5 +17,5 @@ class SceneBegin extends eui.Component implements  eui.UIComponent {
 	{
 		super.childrenCreated();
 	}
-	
+
 }
