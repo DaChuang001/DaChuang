@@ -1,7 +1,7 @@
-class MyButton extends eui.Component implements  eui.UIComponent {
+class RedPoint extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
-		this.skinName="resource/eui_skins/component/MyButton.exml"
+		this.skinName="resource/eui_skins/component/RedPoint.exml"
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -17,4 +17,4 @@ class MyButton extends eui.Component implements  eui.UIComponent {
 	
 }
 
-export{MyButton}
+export{RedPoint}

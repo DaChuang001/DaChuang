@@ -1,4 +1,7 @@
 import {MyButton} from "../component/MyButton"
+import{BS_game} from "./BS_game"
+import { BS_gameDetail } from "./BS_gameDetail";
+import{SceneBegin} from "./SceneBegin";
 
 class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 	/// 当前随机短语的索引
@@ -62,8 +65,9 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 		}
 		
 	}
-	switchToBsGame(TOUCH_TAP: string, switchToBsGame: any, arg2: this) {
+	private switchToBsGame(TOUCH_TAP: string, switchToBsGame: any, arg2: this) {
 		console.log("Wa");
+		this.addChild(new BS_game());
 	}
 
 	protected partAdded(partName:string,instance:any):void
