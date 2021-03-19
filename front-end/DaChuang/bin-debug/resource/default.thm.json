@@ -20,6 +20,7 @@
 	"exmls": [
 		"resource/eui_skins/ButtonSkin.exml",
 		"resource/eui_skins/CheckBoxSkin.exml",
+		"resource/eui_skins/component/MyBroad.exml",
 		"resource/eui_skins/component/MyButton.exml",
 		"resource/eui_skins/component/RedPoint.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -31,6 +32,7 @@
 		"resource/eui_skins/scene/BS_dialog.exml",
 		"resource/eui_skins/scene/BS_game.exml",
 		"resource/eui_skins/scene/BS_gameDetail.exml",
+		"resource/eui_skins/scene/BS_gameResult.exml",
 		"resource/eui_skins/scene/SceneBegin.exml",
 		"resource/eui_skins/scene/TryScene.exml",
 		"resource/eui_skins/ScrollerSkin.exml",

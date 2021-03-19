@@ -265,7 +265,7 @@ class Main extends eui.UILayer {
         // this.addChild(panel);
 
 
-        this.parent.addChild(new SceneBsDialog());
+        this.parent.addChild(new SceneBsDialog(0));
         this.parent.removeChild(this);
        
     

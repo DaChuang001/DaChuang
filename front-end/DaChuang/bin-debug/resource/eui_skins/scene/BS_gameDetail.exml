@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <e:Skin class="skins.BS_game2"
 	 width="480" height="300" xmlns:e="http://ns.egret.com/eui">
-	<e:Image id="r8" source="shu_jpg" x="0" y="0" width="480" height="300"/>
-	<e:Rect id="r0" width="15" height="15" x="116.104" y="195.387" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Image source="shu_jpg" x="0" y="0" width="480" height="300"/>
+	<e:Rect id="r8" width="15" height="15" x="116.104" y="195.387" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
 	<e:Rect id="r12" width="15" height="15" x="164.839" y="163.578" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
 	<e:Rect id="r2" width="15" height="15" x="39.368" y="106.193" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
 	<e:Rect id="r4" width="15" height="15" x="64.534" y="163.578" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>

@@ -31,11 +31,46 @@ class BS_gameDetail extends eui.Component implements  eui.UIComponent {
 	public r29:eui.Rect;
 	public r30:eui.Rect;
 	public r31:eui.Rect;
-	
+	public rectArr:eui.Rect[];
+	private rpArr:RedPoint[];
 
 	public constructor() {
 		super();
 		this.skinName="resource/eui_skins/scene/BS_gameDetail.exml"
+		this.rectArr=new Array();
+		this.rpArr=new Array();
+		this.rectArr[1]=this.r1;
+		this.rectArr[2]=this.r2;
+		this.rectArr[3]=this.r3;
+		this.rectArr[4]=this.r4;
+		this.rectArr[5]=this.r5;
+		this.rectArr[6]=this.r6;
+		this.rectArr[7]=this.r7;
+		this.rectArr[8]=this.r8;
+		this.rectArr[9]=this.r9;
+		this.rectArr[10]=this.r10;
+		this.rectArr[11]=this.r11;
+		this.rectArr[12]=this.r12;
+		this.rectArr[13]=this.r13;
+		this.rectArr[14]=this.r14;
+		this.rectArr[15]=this.r15;
+		this.rectArr[16]=this.r16;
+		this.rectArr[17]=this.r17;
+		this.rectArr[18]=this.r18;
+		this.rectArr[19]=this.r19;
+		this.rectArr[20]=this.r20;
+		this.rectArr[21]=this.r21;
+		this.rectArr[22]=this.r22;
+		this.rectArr[23]=this.r23;
+		this.rectArr[24]=this.r24;
+		this.rectArr[25]=this.r25;
+		this.rectArr[26]=this.r26;
+		this.rectArr[27]=this.r27;
+		this.rectArr[28]=this.r28;
+		this.rectArr[29]=this.r29;
+		this.rectArr[30]=this.r30;
+		this.rectArr[31]=this.r31;
+
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -49,11 +84,25 @@ class BS_gameDetail extends eui.Component implements  eui.UIComponent {
 		super.childrenCreated();
 	}
 
-	public updateRedPoint(){
+	public updateRedPoint(num:number){
+		console.log("num:"+num);
+		console.log("x:"+this.rectArr[num].x)
 		var rp=new RedPoint();
-		rp.x=this.r24.x;
-		rp.y=this.r24.y;
+		rp.x=this.rectArr[num].x;
+		rp.y=this.rectArr[num].y;
 		this.addChild(rp);
+		this.rpArr.push(rp);
+	}
+
+	public reset(){
+		while(true){
+			var rp=this.rpArr.pop();
+			if(rp){
+				this.removeChild(rp);
+			}else{
+				break;
+			}
+		}
 	}
 	
 }

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.MyBroad"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Group x="313.651" y="341.186">
+	</e:Group>
+	<e:Rect width="1440" height="900" x="0" y="0" fillAlpha="0.6"/>
+	<e:Group x="320" y="200">
+		<e:Image source="board_png" x="0" y="0" width="800" height="500"/>
+		<e:Group x="68.92" y="124.09">
+			<e:Label id="contentLabel" x="66.9" y="0" width="577.236" height="187.559" verticalAlign="justify" textAlign="left" size="35" text="  ：木牌显示当前门牌号。左边的路通向小于当前门牌号的的地点，右边的路通向大于当前门牌号的地点。点击左侧或右侧的小路决定人物去向。"/>
+			<e:Image source="elfin_png" x="0" y="0" width="50" height="50"/>
+			<e:Group id="btn" x="231.08" y="182.51" width="200" height="120">
+			<e:Image source="myButton_png" y="35.81" width="150" height="75" x="25"/>
+			<e:Label text="确认" x="65" y="55.81" size="35"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

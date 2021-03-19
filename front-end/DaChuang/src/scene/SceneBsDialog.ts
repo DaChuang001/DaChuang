@@ -10,12 +10,28 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 	private content:eui.Label;
 	private character_pic: eui.Image;
 	private btn: MyButton;
+	private gs:BS_game;
+	private bg:eui.Image;
+	private hui:eui.Rect;
+	
 
-	public constructor() {
+	public constructor(index:number) {
 		super();
 		this.skinName="resource/eui_skins/scene/BS_dialog.exml";
-		this._idxPrevFocus=0;
-		this.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+		this._idxPrevFocus=index;
+		this.bg.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+            this.updateBitmapTextContent();
+        }, this );
+		this.hui.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+            this.updateBitmapTextContent();
+        }, this );
+		this.character_pic.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+            this.updateBitmapTextContent();
+        }, this );
+		this.content.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+            this.updateBitmapTextContent();
+        }, this );
+		this.nameLabel.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
             this.updateBitmapTextContent();
         }, this );
 	}
@@ -52,13 +68,17 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 				this.content.text="“但门牌号似乎是按照一定顺序排列的，#，或许你可以试试二分查找。”";
 				this.character_pic.source="elfin_png";
 				this.touchEnabled=false;
-				
-				this.btn=new MyButton();
+
+				this.btn=new MyButton("开始尝试");
 				this.btn.x=720;
 				this.btn.y=500;
 				this.btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.switchToBsGame, this);
 				this.addChild(this.btn);
-
+				break;
+			case 8:
+				this.nameLabel.text="#：";
+				this.content.text="“好的，谢谢你，兔子先生，我必须要去试一试”";
+				this.character_pic.source="leadrole_png";
 				break;
 			default:
 				break;
@@ -66,8 +86,12 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 		
 	}
 	private switchToBsGame(TOUCH_TAP: string, switchToBsGame: any, arg2: this) {
-		console.log("Wa");
-		this.addChild(new BS_game());
+		this.nameLabel.text="兔子先生：";
+		this.content.text="“呼...真是太谢谢你了，关于发光石头，或许你可以去红皇后那碰碰运气。皇后正在举行茶话会，顺着这条路往下走就是了，不过别怪我没提醒你，皇后的脾气可不算好。”";
+		this.character_pic.source="rabbit_png";
+		this.gs=new BS_game();
+		this.removeChild(this.btn);
+		this.addChild(this.gs);
 	}
 
 	protected partAdded(partName:string,instance:any):void
