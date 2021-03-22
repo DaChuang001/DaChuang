@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="grassGameSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1783b580247" ></w:Config>
+	<e:Image source="grass_jpg" x="0" y="0" width="1440" height="900"/>
+	<e:Image id="house65" source="room_png" x="65.087" y="71.931" width="183.239" height="231.768"/>
+</e:Skin>

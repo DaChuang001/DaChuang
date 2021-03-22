@@ -238,7 +238,7 @@ class Main extends eui.UILayer {
      * Click the button
      */
     private onButtonClick(e: egret.TouchEvent) {
-        //发送请求
+//发送请求
         // var statusPostLabel = new egret.TextField();
         // this.addChild(statusPostLabel);
         // statusPostLabel.size = 18;
@@ -257,7 +257,7 @@ class Main extends eui.UILayer {
         // request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
         // request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
         // request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
-
+      
         // let panel = new eui.Panel();
         // panel.title = "Title";
         // panel.horizontalCenter = 0;
@@ -267,8 +267,6 @@ class Main extends eui.UILayer {
 
         this.parent.addChild(new SceneBsDialog(0));
         this.parent.removeChild(this);
-       
-    
     }
 
     private onPostComplete(event:egret.Event):void {
