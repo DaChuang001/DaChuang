@@ -7,6 +7,18 @@ declare module skins{
 	}
 }
 declare module skins{
+	class MyBroad extends eui.Skin{
+	}
+}
+declare module skins{
+	class myButton extends eui.Skin{
+	}
+}
+declare module skins{
+	class RedPoint extends eui.Skin{
+	}
+}
+declare module skins{
 	class HScrollBarSkin extends eui.Skin{
 	}
 }
@@ -28,6 +40,22 @@ declare module skins{
 }
 declare module skins{
 	class RadioButtonSkin extends eui.Skin{
+	}
+}
+declare module skins{
+	class BS_dialog extends eui.Skin{
+	}
+}
+declare module skins{
+	class BS_game extends eui.Skin{
+	}
+}
+declare module skins{
+	class BS_game2 extends eui.Skin{
+	}
+}
+declare module skins{
+	class BS_gameResult extends eui.Skin{
 	}
 }
 declare class SceneBeginSkin extends eui.Skin{

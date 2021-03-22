@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BS_gameResult"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="forest_jpg" x="0" y="0" width="1440" height="900"/>
+	<e:Image source="house_png" x="556.967" y="166.225" anchorOffsetX="194.273" anchorOffsetY="109.023" width="717.055" height="500.988"/>
+	<e:Image source="plank2_png" x="427.779" y="359.536" anchorOffsetX="82.763" anchorOffsetY="68.251" width="204.047" height="239.544"/>
+	<e:Image source="leadrole_png" x="642.384" y="549.233" width="332.28" height="339.461"/>
+	<e:Label id="plank2Label" text="00" x="375.754" y="331.524" width="148.592" height="57.724" verticalAlign="middle" textAlign="center" size="50"/>
+	<e:Label id="resultLabel" text="恭喜你，找到了！" x="981.838" y="653.02" width="442.97" height="108.051" verticalAlign="middle" textAlign="center" size="50"/>
+	<e:Label text="（点击继续.......）" x="1026.86" y="761.071" size="40"/>
+</e:Skin>

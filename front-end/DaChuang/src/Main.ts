@@ -27,8 +27,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////
 
+import {SceneBegin} from "./scene/SceneBegin"
+import {SceneBsDialog} from "./scene/SceneBsDialog"
+
 class Main extends eui.UILayer {
 
+    //用来显示请求发送状态的label
     private statusPostLabel: egret.TextField;
      /// 当前随机短语的索引
     private _idxPrevFocus:number;
@@ -147,11 +151,11 @@ class Main extends eui.UILayer {
         this.addChild(this.colorLabel);
         
         /// 轻触舞台以改变位图文本所用文字
-        this.stage.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+        this.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
             this.updateBitmapTextContent();
         }, this );
         
-        this.updateBitmapTextContent();
+        //this.updateBitmapTextContent();
 
         let textfield = new egret.TextField();
         this.addChild(textfield);
@@ -175,6 +179,7 @@ class Main extends eui.UILayer {
     
      /// 用户交互触发位图文本内容变更
      private updateBitmapTextContent(){
+         //console.log("no...");
          if( this._idxPrevFocus==4 ){     /// 避免与之前选择短语雷同
              this._idxPrevFocus=0;
          }
@@ -233,7 +238,7 @@ class Main extends eui.UILayer {
      * Click the button
      */
     private onButtonClick(e: egret.TouchEvent) {
-        // //发送请求
+//发送请求
         // var statusPostLabel = new egret.TextField();
         // this.addChild(statusPostLabel);
         // statusPostLabel.size = 18;
@@ -252,16 +257,15 @@ class Main extends eui.UILayer {
         // request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
         // request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
         // request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
+      
+        // let panel = new eui.Panel();
+        // panel.title = "Title";
+        // panel.horizontalCenter = 0;
+        // panel.verticalCenter = 0;
+        // this.addChild(panel);
 
-        let panel = new eui.Panel();
-        panel.title = "Title";
-        panel.horizontalCenter = 0;
-        panel.verticalCenter = 0;
-        this.addChild(panel);
-        this.parent.addChild(new Dormitory());
-        // this.parent.addChild(new grassGame());
-        // this.parent.addChild(new RoomateScene());
-        // this.parent.addChild(new manMove());
+
+        this.parent.addChild(new SceneBsDialog(0));
         this.parent.removeChild(this);
     }
 

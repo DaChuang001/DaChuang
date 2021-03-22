@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.BS_game2"
+	 width="480" height="300" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="shu_jpg" x="0" y="0" width="480" height="300"/>
+	<e:Rect id="r8" width="15" height="15" x="116.104" y="195.387" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r12" width="15" height="15" x="164.839" y="163.578" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r2" width="15" height="15" x="39.368" y="106.193" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r4" width="15" height="15" x="64.534" y="163.578" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r6" width="15" height="15" x="89.495" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r10" width="15" height="15" x="139.87" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r9" width="15" height="15" x="128.351" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r5" width="15" height="15" x="77.687" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r1" width="15" height="15" x="27.638" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r3" width="15" height="15" x="51.574" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r7" width="15" height="15" x="101.104" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r11" width="15" height="15" x="151.468" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r13" width="15" height="15" x="178.069" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r15" width="15" height="15" x="201.186" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r17" width="15" height="15" x="267.137" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r18" width="15" height="15" x="279.391" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r19" width="15" height="15" x="290.826" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r21" width="15" height="15" x="317.017" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r23" width="15" height="15" x="340.953" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r25" width="15" height="15" x="367.554" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r27" width="15" height="15" x="390.671" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r29" width="15" height="15" x="417.477" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r31" width="15" height="15" x="440.594" y="44.419" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r30" width="15" height="15" x="429.279" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r26" width="15" height="15" x="379.639" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r28" width="15" height="15" x="403.985" y="163.578" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r24" width="15" height="15" x="354.55" y="195.387" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r22" width="15" height="15" x="329.18" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r20" width="15" height="15" x="303.929" y="163.578" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r14" width="15" height="15" x="189.835" y="107.38" ellipseWidth="15" ellipseHeight="15" fillColor="0xFFFFFF"/>
+	<e:Rect id="r16" width="15" height="15" x="233.524" y="266.225" ellipseWidth="15" ellipseHeight="15" fillColor="#A32424"/>
+</e:Skin>

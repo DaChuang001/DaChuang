@@ -7,6 +7,9 @@
   },
   "modules": [
     {
+      "name": "tween"
+    },
+    {
       "name": "egret"
     },
     {

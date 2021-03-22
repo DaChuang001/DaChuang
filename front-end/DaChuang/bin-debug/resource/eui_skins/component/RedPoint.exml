@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.RedPoint"
+	 width="15"
+	height="15" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect width="15" height="15" x="0" y="0" ellipseWidth="15" ellipseHeight="15" fillColor="0xA32424"/>
+</e:Skin>

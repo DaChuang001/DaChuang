@@ -1,12 +1,72 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,forest_jpg,dormitory_jpg,dormitory_jpg,queen_png,text_png,girl_png,helper_png,bg2_png,grass_jpg,room_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,forest_jpg,dormitory_jpg,dormitory_jpg,queen_png,text_png,girl_png,helper_png,bg2_png,grass_jpg,room_png,BS_background,rabbit_png,plank_png,plank2_png,myButton_png,leadrole_png,house_png,elfin_png,lukou_jpg,shu_jpg,magic_png,board_png",
 			"name": "preload"
 		}
 	],
 	"resources": [
 		{
+			"url": "picture/magic.png",
+			"type": "image",
+			"name": "magic_png"
+		},
+		{
+			"url": "picture/board.png",
+			"type": "image",
+			"name": "board_png"
+		},
+		{
+			"url": "picture/BS_game2.jpg",
+			"type": "image",
+			"name": "shu_jpg"
+		},
+		{
+			"url": "picture/lukou_bg.jpg",
+			"type": "image",
+			"name": "lukou_jpg"
+		},
+		{
+			"url": "picture/rabbit.png",
+			"type": "image",
+			"name": "rabbit_png"
+		},
+		{
+			"url": "picture/plank2.png",
+			"type": "image",
+			"name": "plank2_png"
+		},
+		{
+			"url": "picture/plank.png",
+			"type": "image",
+			"name": "plank_png"
+		},
+		{
+			"url": "picture/myButton.png",
+			"type": "image",
+			"name": "myButton_png"
+		},
+		{
+			"url": "picture/lead_role.png",
+			"type": "image",
+			"name": "leadrole_png"
+		},
+		{
+			"url": "picture/house.png",
+			"type": "image",
+			"name": "house_png"
+		},
+		{
+			"url": "picture/elfin.png",
+			"type": "image",
+			"name": "elfin_png"
+		},
+		{
+			"url": "picture/BS_background.jpg",
+			"type": "image",
+			"name": "BS_background"
+    },
+    {
 			"url": "picture/room.png",
 			"type": "image",
 			"name": "room_png"
