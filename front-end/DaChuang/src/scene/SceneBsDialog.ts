@@ -1,5 +1,6 @@
 import {MyButton} from "../component/MyButton"
 import{BS_game} from "./BS_game"
+import{Dormitory}from "./Dormitory"
 import { BS_gameDetail } from "./BS_gameDetail";
 
 class SceneBsDialog extends eui.Component implements  eui.UIComponent {
@@ -80,6 +81,18 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 				this.character_pic.source="leadrole_png";
 				break;
 			case 9:
+				//发送请求
+				var obj = { iduser:1,progress:3 };
+				var request = new egret.HttpRequest();
+				request.responseType = egret.HttpResponseType.TEXT;
+				request.open("http://localhost:9092/user/sendProgress",egret.HttpMethod.POST);
+				request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+				var papa=JSON.stringify(obj)
+				request.send(papa);
+				request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
+				request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
+				request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);
+				
 				this.parent.addChild(new Dormitory());
 			default:
 				break;
@@ -94,6 +107,27 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 		this.removeChild(this.btn);
 		this.addChild(this.gs);
 	}
+
+	private onPostComplete(event:egret.Event):void {
+        var request = <egret.HttpRequest>event.currentTarget;
+        console.log("post data : ",request.response);
+
+        var datas=JSON.parse(request.response);
+        alert(datas[0].username);
+        
+        var responseLabel = new egret.TextField();
+        responseLabel.size = 18;
+        responseLabel.text = "POST response:\n" + request.response.substring(0, 50) + "...";
+        this.addChild(responseLabel);
+        responseLabel.x = 300;
+        responseLabel.y = 70;
+    }
+    private onPostIOError(event:egret.IOErrorEvent):void {
+        console.log("post error : " + event);
+    }
+    private onPostProgress(event:egret.ProgressEvent):void {
+        console.log("post progress : " + Math.floor(100*event.bytesLoaded/event.bytesTotal) + "%");
+    }
 
 	protected partAdded(partName:string,instance:any):void
 	{

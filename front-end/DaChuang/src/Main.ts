@@ -27,8 +27,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////////
 
-import {SceneBegin} from "./scene/SceneBegin"
 import {SceneBsDialog} from "./scene/SceneBsDialog"
+import {Dormitory} from "./scene/Dormitory"
 
 class Main extends eui.UILayer {
 
@@ -237,44 +237,68 @@ class Main extends eui.UILayer {
      * 点击按钮
      * Click the button
      */
-    private onButtonClick(e: egret.TouchEvent) {
-//发送请求
-        // var statusPostLabel = new egret.TextField();
-        // this.addChild(statusPostLabel);
-        // statusPostLabel.size = 18;
-        // statusPostLabel.x = 300;
-        // statusPostLabel.y = 40;
-        // statusPostLabel.text = "Sending POST request to httpbin.org";
+     private onButtonClick(e: egret.TouchEvent) {
+        //发送请求
+                // var statusPostLabel = new egret.TextField();
+                // this.addChild(statusPostLabel);
+                // statusPostLabel.size = 18;
+                // statusPostLabel.x = 300;
+                // statusPostLabel.y = 40;
+                // statusPostLabel.text = "Sending POST request to httpbin.org";
+                
         
-
-        // var obj = { password:"123123", iduser:1};
-        // var request = new egret.HttpRequest();
-        // request.responseType = egret.HttpResponseType.TEXT;
-        // request.open("http://localhost:9092/user/login",egret.HttpMethod.POST);
-        // request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-        // var papa=JSON.stringify(obj)
-        // request.send(papa);
-        // request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
-        // request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
-        // request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
-      
-        // let panel = new eui.Panel();
-        // panel.title = "Title";
-        // panel.horizontalCenter = 0;
-        // panel.verticalCenter = 0;
-        // this.addChild(panel);
-
-
-        this.parent.addChild(new SceneBsDialog(0));
-        this.parent.removeChild(this);
-    }
+                // var obj = { password:"123123", iduser:1};
+                // var request = new egret.HttpRequest();
+                // request.responseType = egret.HttpResponseType.TEXT;
+                // request.open("http://localhost:9092/user/login",egret.HttpMethod.POST);
+                // request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                // var papa=JSON.stringify(obj)
+                // request.send(papa);
+                // request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
+                // request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
+                // request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
+              
+                // let panel = new eui.Panel();
+                // panel.title = "Title";
+                // panel.horizontalCenter = 0;
+                // panel.verticalCenter = 0;
+                // this.addChild(panel);
+        
+                //发送请求
+          var obj = { iduser:1 };
+          var request = new egret.HttpRequest();
+          request.responseType = egret.HttpResponseType.TEXT;
+          request.open("http://localhost:9092/user/getProgress",egret.HttpMethod.POST);
+          request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          var papa=JSON.stringify(obj)
+          request.send(papa);
+          request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
+          request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
+          request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);
+        
+            }
 
     private onPostComplete(event:egret.Event):void {
         var request = <egret.HttpRequest>event.currentTarget;
         console.log("post data : ",request.response);
 
-        var datas=JSON.parse(request.response);
-        alert(datas[0].username);
+        var progress=request.response;
+        alert(progress);
+        switch(progress){
+            case "1":
+                alert("yuezeng");
+                break;
+            case "2":
+                this.parent.addChild(new SceneBsDialog(0));
+                this.parent.removeChild(this);
+                break;
+            case "3":
+                this.parent.addChild(new Dormitory());
+                this.parent.removeChild(this);
+                break;
+            default:
+
+        }
         
         var responseLabel = new egret.TextField();
         responseLabel.size = 18;

@@ -1,3 +1,5 @@
+import { MyButton } from "../component/MyButton";
+
 class Dormitory extends eui.Component implements  eui.UIComponent {
 	public textLabel:eui.Label; 
 	public characterName:eui.Label;
@@ -6,7 +8,6 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
 	public character:eui.Image;
 	public head:Number;
 	public bgNum:Number;
-	public btn:eui.Button;
 
 	public constructor() {
 		super();
@@ -78,12 +79,11 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
 		else if(this._idxPrevFocus==12){
 			this.bgNum=0;
 			this.head=1;
-			this.btn=new eui.Button();
-		    this.btn.x=this.parent.width/2;
-			this.btn.y=this.parent.height/2;
-			this.btn.label="开始游戏";
-			this.parent.addChild(this.btn);
-			this.btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGame, this);
+			let btn=new MyButton("开始游戏");
+		    btn.x=this.parent.width/2;
+			btn.y=this.parent.height/2;
+			this.parent.addChild(btn);
+			btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.startGame, this);
 		}
 
 		if(this.head==0){
@@ -127,5 +127,7 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
 		this.parent.addChild(new grassGame());
 		this.parent.removeChild(this);
 	}
-   
+
 }
+
+export{Dormitory}

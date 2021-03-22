@@ -4,12 +4,15 @@
 	height="900" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
 	<e:Image source="lukou_jpg" x="0" y="0" width="1440" height="900"/>
 	<e:Image source="plank2_png" x="668.817" y="367.83" anchorOffsetX="2.83" anchorOffsetY="8.489" width="220" height="220"/>
-	<e:Label id="plank2Label" text="48" size="50" verticalAlign="middle" horizontalCenter="62" top="400"/>
+	<e:Label id="plank2Label" text="16" size="50" verticalAlign="middle" horizontalCenter="62" top="400"/>
 	<e:Image source="plank_png" x="250" width="300" height="300" y="-30"/>
 	<e:Image source="plank_png" x="900" width="300" height="300" y="-30"/>
-	<e:Label id="leftLabel" text="门牌号小于48" x="322.45" y="107.83" size="40" verticalAlign="middle" bold="true" width="150"/>
-	<e:Label text="门牌号大于48" x="978.3" y="109.81" id="rightLabel" size="40" verticalAlign="middle" bold="true" width="150"/>
+	<e:Label id="leftLabel" text="门牌号小于16" x="322.45" y="107.83" size="40" verticalAlign="middle" bold="true" width="150"/>
+	<e:Label text="门牌号大于16" x="978.3" y="109.81" id="rightLabel" size="40" verticalAlign="middle" bold="true" width="150"/>
 	<e:Image id="role_pic" source="leadrole_png" x="625.987" y="600" width="300" height="300"/>
-	<e:Rect id="leftRoad" width="300" height="650" x="305.607" y="225.578" fillAlpha="0"/>
-	<e:Rect id="rightRoad" width="300" height="650" x="946.619" y="225.578" fillAlpha="0"/>
+	<e:Rect id="leftRoad" width="340.429" height="828.359" x="255.666" y="47.219" fillAlpha="0"/>
+	<e:Rect id="rightRoad" width="335.672" height="821.225" x="910.947" y="54.353" fillAlpha="0"/>
+	<e:Image source="tips_png" x="510.306" y="21.989" height="294.579" width="254.161"/>
+	<e:Image source="rabbit_png" x="747.591" y="189.285" width="139.745" height="141.632"/>
+	<e:Label x="566.116" y="137.472" textColor="0x000000" text="目的地13"/>
 </e:Skin>

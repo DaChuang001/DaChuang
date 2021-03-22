@@ -115,7 +115,7 @@ class grassGame extends eui.Component implements  eui.UIComponent {
     }
 	private click67( iStatus:number ){
         if(this.pro==1&&iStatus==1){
-			this.queenWord.text="还算机灵！黑桃A住哪？";
+			this.queenWord.text="竟然答对了！那黑桃A住哪？";
 			this.pro++;
 		}
 		else if(this.pro==0&&iStatus==1){this.queenWord.text="我要把你变成蚂蚁！";}
