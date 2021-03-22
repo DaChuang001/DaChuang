@@ -5,14 +5,12 @@ import com.example.demo.service.UserService;
 import org.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
 @Controller
+@CrossOrigin(origins = "*",maxAge = 3600)
 public class LoginController {
 
     //将Service注入Web层
@@ -22,6 +20,8 @@ public class LoginController {
     @RequestMapping(value = "/user/login",method = RequestMethod.POST)
     @ResponseBody
     public String login(@RequestBody UserBean user){
+        System.out.println("登录");
+        System.out.println(user.getIduser()+user.getPassword());
         ArrayList<UserBean> userBean= userService.loginIn(user.getIduser(),user.getPassword());
         return getUser(userBean);
     }

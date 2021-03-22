@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9092
 spring:
   datasource:
     name: game
@@ -8,6 +8,11 @@ spring:
     username: root
     password: 78089091
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+socketio:
+  host: localhost
+  port: 9092
+
 
   mybatis:
   mapper-locations: classpath*:com/example/demo/mapper/*.xml

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="grassGameSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1783b580247" ></w:Config>
+	<e:Image source="grass_jpg" x="0" y="0" width="1440" height="900"/>
+	<e:Image id="house65" source="room_png" x="65.087" y="71.931" width="173.922" height="210.029"/>
+	<e:Label text="65" x="154.421" y="102.684"/>
+	<e:Image id="house66" source="room_png" x="362.522" y="89.621" width="174.31" height="221.416"/>
+	<e:Image id="house67" source="room_png" x="719.559" y="74.714" width="137.043" height="187.255"/>
+	<e:Image id="house72" source="room_png" x="958.149" y="174.044" width="164.994" height="212.1"/>
+	<e:Image id="house73" source="room_png" x="1228.217" y="80.95" width="152.571" height="177.938"/>
+	<e:Image id="house71" source="room_png" x="709.789" y="291.366" width="171.205" height="221.416"/>
+	<e:Image id="house69" source="room_png" x="20.838" y="481.573" width="189.839" height="230.733"/>
+	<e:Image id="house70" source="room_png" x="275.513" y="537.106" width="208.472" height="230.733"/>
+	<e:Image id="house75" source="room_png" x="1204.212" y="440.949" width="192.944" height="233.838"/>
+	<e:Image id="house68" source="room_png" x="476.62" y="357.245" width="177.416" height="202.783"/>
+	<e:Label text="66" x="452.421" y="127"/>
+	<e:Label text="67" x="787.211" y="102.316"/>
+	<e:Label text="72" x="1045" y="199"/>
+	<e:Label text="73" x="1303" y="96"/>
+	<e:Label text="71" x="797" y="323"/>
+	<e:Image source="queen_png" x="194.579" y="310.684" width="218.263" height="206.052"/>
+	<e:Label text="75" x="1312.58" y="474.632"/>
+	<e:Image id="house74" source="room_png" x="946.211" y="403.211" width="205.368" height="224.526"/>
+	<e:Label text="74" x="1055" y="428"/>
+	<e:Label text="68" x="567" y="388"/>
+	<e:Label text="70" x="393" y="577"/>
+	<e:Label text="69" x="123" y="515"/>
+</e:Skin>

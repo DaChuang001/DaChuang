@@ -29,6 +29,10 @@
 
 class Main extends eui.UILayer {
 
+    private statusPostLabel: egret.TextField;
+     /// 当前随机短语的索引
+    private _idxPrevFocus:number;
+     
 
     protected createChildren(): void {
         super.createChildren();
@@ -58,6 +62,7 @@ class Main extends eui.UILayer {
     }
 
     private async runGame() {
+        this._idxPrevFocus=0;
         await this.loadResource()
         this.createGameScene();
         const result = await RES.getResAsync("description_json")
@@ -93,8 +98,10 @@ class Main extends eui.UILayer {
 
         })
     }
-
+    private _bitmapText:egret.BitmapText;
     private textfield: egret.TextField;
+    private colorLabel: egret.TextField
+    private indexNum: BigInteger
     /**
      * 创建场景界面
      * Create scene interface
@@ -127,17 +134,24 @@ class Main extends eui.UILayer {
         line.x = 172;
         line.y = 61;
         this.addChild(line);
-
-
-        let colorLabel = new egret.TextField();
-        colorLabel.textColor = 0xffffff;
-        colorLabel.width = stageW - 172;
-        colorLabel.textAlign = "center";
-        colorLabel.text = "Hello Egret";
-        colorLabel.size = 24;
-        colorLabel.x = 172;
-        colorLabel.y = 80;
-        this.addChild(colorLabel);
+        
+    
+        this.colorLabel = new egret.TextField();
+        this.colorLabel.textColor = 0xffffff;
+        this.colorLabel.width = stageW - 172;
+        this.colorLabel.textAlign = "center";
+        this.colorLabel.text = "Hello Egret";
+        this.colorLabel.size = 24;
+        this.colorLabel.x = 172;
+        this.colorLabel.y = 80;
+        this.addChild(this.colorLabel);
+        
+        /// 轻触舞台以改变位图文本所用文字
+        this.stage.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+            this.updateBitmapTextContent();
+        }, this );
+        
+        this.updateBitmapTextContent();
 
         let textfield = new egret.TextField();
         this.addChild(textfield);
@@ -157,6 +171,23 @@ class Main extends eui.UILayer {
         this.addChild(button);
         button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
     }
+    
+    
+     /// 用户交互触发位图文本内容变更
+     private updateBitmapTextContent(){
+         if( this._idxPrevFocus==4 ){     /// 避免与之前选择短语雷同
+             this._idxPrevFocus=0;
+         }
+         this.colorLabel.text =  [
+             "哦！天呐，天呐！我要迟到了！"
+             ,"这里是、是爱丽丝梦游仙境？"
+             ,"嗯......或许你可以理解为另一个平行世界，赶紧跟上去吧，看看兔子先生会不会给我们线索。"
+             ,"（追赶上兔子先生）“请问....."
+         ][ this._idxPrevFocus ];
+         this._idxPrevFocus=this._idxPrevFocus+1;
+         //console.log( "hit:", vcPhraseIdx, this._idxPrevFocus );
+     }
+    
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
      * Create a Bitmap object according to name keyword.As for the property of name please refer to the configuration file of resources/resource.json.
@@ -202,10 +233,56 @@ class Main extends eui.UILayer {
      * Click the button
      */
     private onButtonClick(e: egret.TouchEvent) {
+        // //发送请求
+        // var statusPostLabel = new egret.TextField();
+        // this.addChild(statusPostLabel);
+        // statusPostLabel.size = 18;
+        // statusPostLabel.x = 300;
+        // statusPostLabel.y = 40;
+        // statusPostLabel.text = "Sending POST request to httpbin.org";
+        
+
+        // var obj = { password:"123123", iduser:1};
+        // var request = new egret.HttpRequest();
+        // request.responseType = egret.HttpResponseType.TEXT;
+        // request.open("http://localhost:9092/user/login",egret.HttpMethod.POST);
+        // request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        // var papa=JSON.stringify(obj)
+        // request.send(papa);
+        // request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
+        // request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
+        // request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);;
+
         let panel = new eui.Panel();
         panel.title = "Title";
         panel.horizontalCenter = 0;
         panel.verticalCenter = 0;
         this.addChild(panel);
+        this.parent.addChild(new Dormitory());
+        // this.parent.addChild(new grassGame());
+        // this.parent.addChild(new RoomateScene());
+        // this.parent.addChild(new manMove());
+        this.parent.removeChild(this);
+    }
+
+    private onPostComplete(event:egret.Event):void {
+        var request = <egret.HttpRequest>event.currentTarget;
+        console.log("post data : ",request.response);
+
+        var datas=JSON.parse(request.response);
+        alert(datas[0].username);
+        
+        var responseLabel = new egret.TextField();
+        responseLabel.size = 18;
+        responseLabel.text = "POST response:\n" + request.response.substring(0, 50) + "...";
+        this.addChild(responseLabel);
+        responseLabel.x = 300;
+        responseLabel.y = 70;
+    }
+    private onPostIOError(event:egret.IOErrorEvent):void {
+        console.log("post error : " + event);
+    }
+    private onPostProgress(event:egret.ProgressEvent):void {
+        console.log("post progress : " + Math.floor(100*event.bytesLoaded/event.bytesTotal) + "%");
     }
 }

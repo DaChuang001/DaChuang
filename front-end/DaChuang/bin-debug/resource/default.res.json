@@ -1,11 +1,56 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,forest_jpg,dormitory_jpg,dormitory_jpg,queen_png,text_png,girl_png,helper_png,bg2_png,grass_jpg,room_png",
 			"name": "preload"
 		}
 	],
 	"resources": [
+		{
+			"url": "picture/room.png",
+			"type": "image",
+			"name": "room_png"
+		},
+		{
+			"url": "picture/grass.jpg",
+			"type": "image",
+			"name": "grass_jpg"
+		},
+		{
+			"url": "picture/bg2.jpg",
+			"type": "image",
+			"name": "bg2_jpg"
+		},
+		{
+			"url": "picture/helper.png",
+			"type": "image",
+			"name": "helper_png"
+		},
+		{
+			"url": "picture/girl.png",
+			"type": "image",
+			"name": "girl_png"
+		},
+		{
+			"url": "picture/text_bg.png",
+			"type": "image",
+			"name": "text_png"
+		},
+		{
+			"url": "picture/queen.png",
+			"type": "image",
+			"name": "queen_png"
+		},
+		{
+			"url": "assets/dormitory.jpg",
+			"type": "image",
+			"name": "dormitory_jpg"
+		},
+		{
+			"url": "picture/forest.jpg",
+			"type": "image",
+			"name": "forest_jpg"
+		},
 		{
 			"url": "assets/CheckBox/checkbox_select_disabled.png",
 			"type": "image",
@@ -135,6 +180,11 @@
 			"name": "description_json",
 			"type": "json",
 			"url": "config/description.json"
+		},
+		{
+			"name": "dormitory_JPG",
+			"type": "bin",
+			"url": "assets/dormitory.JPG"
 		}
 	]
 }
