@@ -18,4 +18,16 @@ public class UserServiceImpl implements UserService {
     public ArrayList<UserBean> loginIn(int iduser, String password) {
         return userMapper.getInfo(iduser,password);
     }
+
+    @Override
+    public int getProgress(int iduser) {
+        return userMapper.getProgress(iduser);
+    }
+
+    @Override
+    public int modifyProgress(int iduser,int progress) {
+        return userMapper.sendProgrss(iduser,progress);
+    }
+
+
 }

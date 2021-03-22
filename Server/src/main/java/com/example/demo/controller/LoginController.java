@@ -26,6 +26,25 @@ public class LoginController {
         return getUser(userBean);
     }
 
+    @RequestMapping(value = "/user/getProgress",method = RequestMethod.POST)
+    @ResponseBody
+    public String getProgress(@RequestBody UserBean user){
+        System.out.println("获取进度");
+        System.out.println(user.getIduser()+user.getPassword());
+        int progress=userService.getProgress(user.getIduser());
+
+        return progress+"";
+    }
+
+    @RequestMapping(value = "/user/sendProgress",method = RequestMethod.POST)
+    @ResponseBody
+    public String sendProgress(@RequestBody UserBean user){
+        System.out.println("修改进度");
+        System.out.println(user.getIduser()+user.getProgress());
+        userService.modifyProgress(user.getIduser(),user.getProgress());
+        return "success";
+    }
+
     public static String getUser(ArrayList<UserBean> checkItemIds) {
         if (checkItemIds.isEmpty()) {
             return null;
