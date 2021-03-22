@@ -60,7 +60,11 @@ declare module skins{
 }
 declare class SceneBeginSkin extends eui.Skin{
 }
+declare class finalRoomSkin extends eui.Skin{
+}
 declare class grassGameSkin extends eui.Skin{
+}
+declare class RoomateSceneSkin extends eui.Skin{
 }
 declare class TrySceneSkin extends eui.Skin{
 }

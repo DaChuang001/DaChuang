@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="grassGameSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="grassGameSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"   >
+	<w:Declarations>
+		<tween:TweenGroup id="move">
+			<tween:TweenItem target="{A}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{248.014}" y="{146.108}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{B}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{310.932}" y="{160.424}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
 	<w:Config id="1783b580247" ></w:Config>
 	<e:Image source="grass_jpg" x="0" y="0" width="1440" height="900"/>
 	<e:Image id="house65" source="room_png" x="65.087" y="71.931" width="173.922" height="210.029"/>
@@ -25,4 +43,6 @@
 	<e:Label text="68" x="567" y="388"/>
 	<e:Label text="70" x="393" y="577"/>
 	<e:Label text="69" x="123" y="515"/>
+	<e:Image id="A" source="A_png" x="584.183" y="195.744"/>
+	<e:Image id="B" source="B_png" x="656.126" y="201.035"/>
 </e:Skin>

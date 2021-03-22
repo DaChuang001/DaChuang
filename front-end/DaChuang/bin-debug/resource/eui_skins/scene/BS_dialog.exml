@@ -2,8 +2,8 @@
 <e:Skin class="skins.BS_dialog"
 	 width="1440"
 	height="900" xmlns:e="http://ns.egret.com/eui">
-	<e:Image source="BS_background" y="0" x="0" width="1440" height="900" touchEnabled="false"/>
-	<e:Rect height="300" fillAlpha="0.8" left="0" right="0" bottom="0" fillColor="0x444444"/>
+	<e:Image id="bg" source="BS_background" y="0" x="0" width="1440" height="900" touchEnabled="true"/>
+	<e:Rect id="hui" height="300" fillAlpha="0.8" left="0" right="0" bottom="0" fillColor="0x444444"/>
 	<e:Image id="character_pic" source="rabbit_png" left="0" bottom="0" height="300" width="300"/>
 	<e:Label id="content" text="“哎呀！公爵夫人，公爵夫人！哎！要是我让她等我那么久，她肯定会发脾气的！”" x="348.552" y="696.814" verticalAlign="middle" width="1000" height="200" size="40"/>
 	<e:Label id="nameLabel" text="兔子先生：" x="351.405" y="620" width="250" height="70" verticalAlign="middle" size="40"/>

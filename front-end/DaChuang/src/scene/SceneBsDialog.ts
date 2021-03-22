@@ -1,7 +1,6 @@
 import {MyButton} from "../component/MyButton"
 import{BS_game} from "./BS_game"
 import { BS_gameDetail } from "./BS_gameDetail";
-import{SceneBegin} from "./SceneBegin";
 
 class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 	/// 当前随机短语的索引
@@ -80,6 +79,8 @@ class SceneBsDialog extends eui.Component implements  eui.UIComponent {
 				this.content.text="“好的，谢谢你，兔子先生，我必须要去试一试”";
 				this.character_pic.source="leadrole_png";
 				break;
+			case 9:
+				this.parent.addChild(new Dormitory());
 			default:
 				break;
 		}

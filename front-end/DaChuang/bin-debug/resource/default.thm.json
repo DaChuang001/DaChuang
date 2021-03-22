@@ -16,7 +16,9 @@
 		"SceneBegin": "resource/scene/SceneBegin.exml",
 		"TryScene": "resource/scene/TryScene.exml",
 		"Dormitory": "resource/eui_skins/scene/Dormitory.exml",
-		"grassGame": "resource/eui_skins/scene/grassGame.exml"
+		"grassGame": "resource/eui_skins/scene/grassGame.exml",
+		"RoomateScene": "resource/eui_skins/RoomateScene.exml",
+		"finalRoom": "resource/eui_skins/scene/finalRoom.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -36,8 +38,10 @@
 		"resource/eui_skins/scene/BS_gameDetail.exml",
 		"resource/eui_skins/scene/BS_gameResult.exml",
 		"resource/eui_skins/scene/Dormitory.exml",
+		"resource/eui_skins/scene/finalRoom.exml",
 		"resource/eui_skins/scene/grassGame.exml",
-		"resource/eui_skins/scene/SceneBegin.exml",
+		"resource/eui_skins/scene/manMove.exml",
+		"resource/eui_skins/scene/RoomateScene.exml",
 		"resource/eui_skins/scene/TryScene.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
 		"resource/eui_skins/TextInputSkin.exml",
