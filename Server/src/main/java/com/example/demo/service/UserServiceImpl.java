@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int modifyProgress(int iduser,int progress) {
-        return userMapper.sendProgrss(iduser,progress);
+        return userMapper.modifyProgress(iduser,progress);
     }
 
 

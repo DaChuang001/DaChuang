@@ -30,15 +30,15 @@ public class LoginController {
     @ResponseBody
     public String getProgress(@RequestBody UserBean user){
         System.out.println("获取进度");
-        System.out.println(user.getIduser()+user.getPassword());
+        System.out.println(user.getIduser());
         int progress=userService.getProgress(user.getIduser());
-
+        System.out.println(progress);
         return progress+"";
     }
 
     @RequestMapping(value = "/user/sendProgress",method = RequestMethod.POST)
     @ResponseBody
-    public String sendProgress(@RequestBody UserBean user){
+    public String modifyProgress(@RequestBody UserBean user){
         System.out.println("修改进度");
         System.out.println(user.getIduser()+user.getProgress());
         userService.modifyProgress(user.getIduser(),user.getProgress());

@@ -10,6 +10,6 @@ public interface UserMapper {
 
     ArrayList<UserBean> getInfo(int iduser, String password);
     int getProgress(int iduser);
-    int sendProgrss(int iduser,int progress);
+    int modifyProgress(int iduser,int progress);
 
 }

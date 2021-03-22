@@ -4,10 +4,11 @@
     <select id="getInfo" resultType="com.example.demo.bean.UserBean">
         SELECT * FROM user WHERE iduser=#{iduser} AND password = #{password}
     </select>
-    <select id="getProgress" resultType="com.example.demo.bean.UserBean">
+    <select id="getProgress" resultType="integer">
         SELECT progress FROM user WHERE iduser=#{iduser}
     </select>
-    <select id="sendProgress" resultType="com.example.demo.bean.UserBean">
+
+    <update id="modifyProgress">
         UPDATE user set progress=#{progress} where iduser=#{iduser}
-    </select>
+    </update>
 </mapper>
