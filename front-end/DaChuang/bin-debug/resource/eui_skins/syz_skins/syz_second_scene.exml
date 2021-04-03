@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.syz_second_scene"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="bg" left="0" right="0" top="0" bottom="0" source="bg_16-25_jpg"/>
+	<e:Image id="dia_bg" height="300" y="600" source="dialog_bg_png" left="0" right="0"/>
+	<e:Image id="NPC_pic" width="300" height="300" x="0" y="600" source="angel_png"/>
+	<e:Label id="dialog" y="600" touchEnabled="false" textColor="0x000000" fontFamily="KaiTi" right="0" height="300" width="1140" size="80" textAlign="center" verticalAlign="middle" text="你来到了一间长长的低矮大厅，天花板上挂着一长排的灯。大厅的一边有8扇门，但都是锁着的，一个也打不开"/>
+    <e:Button id="switch_dia_btn" label="Button" left="0" right="0" top="0" bottom="0" alpha="0"/>
+</e:Skin>

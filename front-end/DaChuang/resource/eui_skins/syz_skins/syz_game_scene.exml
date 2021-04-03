@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.syz_game_scene"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+		<tween:TweenGroup id="key0">
+			<tween:TweenItem target="{image0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{68.449}" y="{509.425}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{17.81}" x="{97.164}" y="{485.496}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{657.107}" y="{569.248}" rotation="{359.487}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="key1">
+			<tween:TweenItem target="{image0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{185.702}" y="{203.132}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{25.05}" x="{228.774}" y="{169.632}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{652.32}" y="{588.392}" rotation="{358.545}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="key2">
+			<tween:TweenItem target="{image0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{515.924}" y="{71.521}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{21.204}" x="{535.067}" y="{42.806}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{628.39}" y="{590.784}" rotation="{357.836}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="key3">
+			<tween:TweenItem target="{image0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{817.432}" y="{71.521}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{23.622}" x="{860.505}" y="{38.02}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{645.143}" y="{588.391}" rotation="{358.074}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="key4">
+			<tween:TweenItem target="{image0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{1099.796}" y="{212.703}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object width="{100}" height="{100}" x="{1152.44}" y="{262.954}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object width="{250}" height="{250}" x="{1066.295}" y="{191.166}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="key5">
+			<tween:TweenItem target="{image0}">
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{1200.298}" y="{507.032}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{26.954}" x="{1238.585}" y="{466.352}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{647.535}" y="{605.141}" rotation="{357.714}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Image id="image" left="0" right="0" top="0" bottom="0" source="bg_16-25_jpg"/>
+	<e:Image width="200" height="200" x="186" y="204.961" source="door_png"/>
+	<e:Image width="200" height="200" x="515" y="71.798" source="door_png"/>
+	<e:Image width="200" height="200" x="817" y="71.798" source="door_png"/>
+	<e:Image width="200" height="200" x="1099" y="210.396" source="door_png"/>
+	<e:Image width="200" height="200" x="1200" y="506.615" source="door_png"/>
+	<e:Image width="200" height="200" x="70.731" y="507.485" source="door_png"/>
+	<e:Label text="1号门" x="70.731" y="743.565" width="200" height="60" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" textColor="0x000000" size="50" bold="true"/>
+	<e:Label text="2号门" x="183.999" y="431.041" width="200" height="60" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" textColor="0x000000" size="50" bold="true"/>
+	<e:Label text="3号门" x="512.829" y="308.749" width="200" height="60" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" textColor="0x000000" size="50" bold="true"/>
+	<e:Label text="4号门" x="822.636" y="311.466" width="200" height="60" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" textColor="0x000000" size="50" bold="true"/>
+	<e:Label text="5号门" x="1094.397" y="433.758" width="200" height="60" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" textColor="0x000000" size="50" bold="true"/>
+	<e:Label text="6号门" x="1200.383" y="743.565" width="200" height="60" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" textColor="0x000000" size="50" bold="true"/>
+	<e:Image id="image0" width="200" height="200" x="631.257" y="638.701" source="key_png"/>
+	<e:Button id="door1Btn" x="72.242" y="507.308" alpha="0" width="192.733" height="293.692"/>
+	<e:Button id="door2Btn" x="182.227" y="209.702" alpha="0" width="192.733" height="282.909"/>
+	<e:Button id="door3Btn" x="514.338" y="78.151" alpha="0" width="192.733" height="289.379"/>
+	<e:Button id="door4Btn" x="822.727" y="80.308" alpha="0" width="192.733" height="289.379"/>
+	<e:Button id="door5Btn" x="1098.768" y="216.172" alpha="0" width="192.733" height="278.596"/>
+	<e:Button id="door6Btn" x="1195.813" y="513.777" alpha="0" width="192.733" height="291.536"/>
+	<e:Label id="tips" text="试试点击大门或序号" x="516.737" y="477.434" width="450" height="100" verticalAlign="middle" textAlign="center" fontFamily="KaiTi" size="50"/>
+
+</e:Skin>

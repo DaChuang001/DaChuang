@@ -1,0 +1,65 @@
+{
+    "groups": [
+        {
+            "keys": "angle_png,bg_4-9_jpg,button_png,dialog_bg_png,me_png,Mr_Rabbit_png,micro_jpg,bg_12-15_jpg,bg_16-25_jpg,door_png,key_png",
+            "name": "preload"
+        }
+    ],
+    "resources": [
+		{
+			"url": "assets/DaChuangPic/angel.png",
+			"type": "image",
+			"name": "angel_png"
+		},
+        {
+			"url": "assets/DaChuangPic/bg_4-9.jpg",
+			"type": "image",
+			"name": "bg_4-9_jpg"
+		},
+        {
+			"url": "assets/DaChuangPic/button.png",
+			"type": "image",
+			"name": "button_png"
+		},
+        {
+			"url": "assets/DaChuangPic/dialog_bg.png",
+			"type": "image",
+			"name": "dialog_bg_png"
+		},
+        {
+			"url": "assets/DaChuangPic/me.png",
+			"type": "image",
+			"name": "me_png"
+		},
+        {
+			"url": "assets/DaChuangPic/Mr_Rabbit.png",
+			"type": "image",
+			"name": "Mr_Rabbit_png"
+		},
+        {
+			"url": "assets/DaChuangPic/microcosm.jpg",
+			"type": "image",
+			"name": "micro_jpg"
+		},
+		{
+			"url": "assets/DaChuangPic/bg_12-15.jpg",
+			"type": "image",
+			"name": "bg_12-15_jpg"
+		},
+		{
+			"url": "assets/DaChuangPic/bg_16-25.jpg",
+			"type": "image",
+			"name": "bg_16-25_jpg"
+		},
+		{
+			"url": "assets/DaChuangPic/door.png",
+			"type": "image",
+			"name": "door_png"
+		},
+		{
+			"url": "assets/DaChuangPic/key.png",
+			"type": "image",
+			"name": "key_png"
+		}
+    ]
+}

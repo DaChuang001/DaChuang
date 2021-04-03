@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.game_btn"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="300" height="140" y="350" horizontalCenter="0" source="button_png"/>
+	<e:Label id="labelDisplay" top="346" bottom="408" left="568" right="571" size="65" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center" fontFamily="KaiTi"/>
+</e:Skin>

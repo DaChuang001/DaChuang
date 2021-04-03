@@ -82,6 +82,7 @@ class Main extends eui.UILayer {
             const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/default.res.json", "resource/");
+            await RES.loadConfig("resource/Dachuang.res.json", "resource/");
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
             this.stage.removeChild(loadingView);
@@ -265,17 +266,24 @@ class Main extends eui.UILayer {
                 // this.addChild(panel);
         
                 //发送请求
-          var obj = { iduser:1 };
-          var request = new egret.HttpRequest();
-          request.responseType = egret.HttpResponseType.TEXT;
-          request.open("http://localhost:9092/user/getProgress",egret.HttpMethod.POST);
-          request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-          var papa=JSON.stringify(obj)
-          request.send(papa);
-          request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
-          request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
-          request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);
+        //   var obj = { iduser:1 };
+        //   var request = new egret.HttpRequest();
+        //   request.responseType = egret.HttpResponseType.TEXT;
+        //   request.open("http://localhost:9092/user/getProgress",egret.HttpMethod.POST);
+        //   request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        //   var papa=JSON.stringify(obj)
+        //   request.send(papa);
+        //   request.addEventListener(egret.Event.COMPLETE,this.onPostComplete,this);
+        //   request.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onPostIOError,this);
+        //   request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);
+
         
+        this.parent.addChild(new syz_first_scene());
+        this.parent.removeChild(this);
+
+        // this.parent.addChild(new SceneBsDialog(0));
+        // this.parent.removeChild(this);
+
             }
 
     private onPostComplete(event:egret.Event):void {

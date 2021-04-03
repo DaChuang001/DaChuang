@@ -73,6 +73,26 @@ declare module skins{
 	}
 }
 declare module skins{
+	class game_btn extends eui.Skin{
+	}
+}
+declare module skins{
+	class syz_first_scene extends eui.Skin{
+	}
+}
+declare module skins{
+	class syz_second_scene extends eui.Skin{
+	}
+}
+declare module skins{
+	class syz_game_scene extends eui.Skin{
+	}
+}
+declare module skins{
+	class syz_third_scene extends eui.Skin{
+	}
+}
+declare module skins{
 	class TextInputSkin extends eui.Skin{
 	}
 }
