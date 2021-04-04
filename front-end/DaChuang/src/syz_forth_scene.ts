@@ -1,3 +1,4 @@
+import { SceneBsDialog } from "./scene/SceneBsDialog";
 
 class syz_forth_scene extends eui.Component{
     constructor(){
@@ -44,3 +45,5 @@ class syz_forth_scene extends eui.Component{
         this.switch_dia_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
     }
 }
+
+export{syz_forth_scene}

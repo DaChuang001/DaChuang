@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="finalRoomSkin" width="1440" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
-	<w:Config id="17845e85448" ></w:Config>
-	<e:Image source="roomBG_jpg" x="0" y="0" width="1440" height="900"/>
-	<e:Image source="text_png" x="0" y="666" height="234" width="1440"/>
-	<e:Image id="character" source="AB_png" x="0" y="666" width="230" height="234"/>
+    <w:Config id="17845e85448" ></w:Config>
+    <e:Image source="roomBG_jpg" y="0" x="0" width="1440" height="900"/>
+    <e:Rect id="hui" height="300" fillAlpha="0.8" left="0" right="0" bottom="0" fillColor="0x444444"/>
+    <e:Image id="character" source="AB_png" left="0" bottom="0" height="300" width="300"/>
 </e:Skin>

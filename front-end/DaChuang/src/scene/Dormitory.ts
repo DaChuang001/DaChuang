@@ -22,8 +22,12 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
 		this.characterName.textColor = 0xffffff;
         this.characterName.textAlign = "center";
 		this.characterName.text="红皇后";
-		this.characterName.x=270;
-		this.characterName.y=690;
+		this.characterName.x=351.405;
+        this.characterName.y=620;
+        this.characterName.width=250;
+        this.characterName.height=70;
+        this.characterName.size=40;
+        this.characterName.verticalAlign="middle";
 		this.addChild(this.characterName);
 
 
@@ -31,9 +35,11 @@ class Dormitory extends eui.Component implements  eui.UIComponent {
         this.textLabel.textColor = 0xffffff;
         this.textLabel.textAlign = "left";
         this.textLabel.width=1000;
-        this.textLabel.size=24;
-        this.textLabel.x = 331;
-        this.textLabel.y = 750;
+        this.textLabel.height=200;
+        this.textLabel.size=40;
+        this.textLabel.x = 348.552;
+        this.textLabel.y = 696.814;
+        this.textLabel.verticalAlign="middle";;
         this.addChild(this.textLabel);
 		this.textLabel.text="！！你是谁，怎么会闯入这里？来人...";
 	    

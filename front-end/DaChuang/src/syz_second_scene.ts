@@ -1,3 +1,4 @@
+import { syz_third_scene } from "./syz_third_scene";
 
 class syz_second_scene extends eui.Component{
     constructor(){
@@ -43,3 +44,4 @@ class syz_second_scene extends eui.Component{
         this.switch_dia_btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
     }
 }
+export{syz_second_scene}

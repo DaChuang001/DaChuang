@@ -29,6 +29,7 @@
 
 import {SceneBsDialog} from "./scene/SceneBsDialog"
 import {Dormitory} from "./scene/Dormitory"
+import { syz_first_scene } from "./syz_first_scene";
 
 class Main extends eui.UILayer {
 

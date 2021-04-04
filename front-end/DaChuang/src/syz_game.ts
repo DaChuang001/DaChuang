@@ -1,3 +1,4 @@
+import { syz_forth_scene } from "./syz_forth_scene";
 
 class syz_game extends eui.Component{
     constructor(){
@@ -96,3 +97,4 @@ class syz_game extends eui.Component{
         this.door6Btn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onDoor6Clicked, this);
     }
 }
+export{syz_game}
