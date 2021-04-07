@@ -1,11 +1,26 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,forest_jpg,dormitory_jpg,dormitory_jpg,queen_png,text_png,girl_png,helper_png,bg2_png,grass_jpg,room_png,roomBG_jpg,menA_png,menB_png,A_png,B_png,AB_png,BS_background,rabbit_png,plank_png,plank2_png,myButton_png,leadrole_png,house_png,elfin_png,lukou_jpg,shu_jpg,magic_png,board_png,tips_png,nebula_png,sky_png,c1_png,c2_png,c3_png,c4_png,c5_png,c6_png,board2_png,fanpai_png,huli_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,forest_jpg,dormitory_jpg,dormitory_jpg,queen_png,text_png,girl_png,helper_png,bg2_png,grass_jpg,room_png,roomBG_jpg,menA_png,menB_png,A_png,B_png,AB_png,BS_background,rabbit_png,plank_png,plank2_png,myButton_png,leadrole_png,house_png,elfin_png,lukou_jpg,shu_jpg,magic_png,board_png,tips_png,nebula_png,sky_png,c1_png,c2_png,c3_png,c4_png,c5_png,c6_png,board2_png,fanpai_png,huli_png,BS_game3_png,board3_jpg,title_png",
 			"name": "preload"
 		}
 	],
 	"resources": [
+		{
+			"url": "picture/title.png",
+			"type": "image",
+			"name": "title_png"
+		},
+		{
+			"url": "picture/board3.jpg",
+			"type": "image",
+			"name": "board3_jpg"
+		},
+		{
+			"url": "picture/BS_game3.png",
+			"type": "image",
+			"name": "BS_game3_png"
+		},
 		{
 			"url": "picture/huli.png",
 			"type": "image",

@@ -36,13 +36,13 @@ class grassGame extends eui.Component implements  eui.UIComponent {
 		this.queenWord.verticalAlign="middle";
 		this.addChild(this.queenWord);
 		if(this.pro==0){
-			this.queenWord.text="红桃A";
+			this.queenWord.text="红桃A：";
 		}
 		else if(this.pro==1){
-			this.queenWord.text="方片3";
+			this.queenWord.text="方片3：";
 		}
 		else if(this.pro==2){
-			this.queenWord.text="黑桃A";
+			this.queenWord.text="黑桃A：";
 		}
 		this.addEventListener( egret.TouchEvent.TOUCH_BEGIN, this.touchHandler, this );
 
@@ -99,7 +99,7 @@ class grassGame extends eui.Component implements  eui.UIComponent {
 
 	private click65( iStatus:number ){
 		if(this.pro==0&&iStatus==1){
-			this.queenWord.text="还算机灵！方片3呢？";
+			this.queenWord.text="“还算机灵！方片3呢？”";
 			this.pro++;
 		}
 		else if(this.pro==2&&iStatus==1){
@@ -107,60 +107,60 @@ class grassGame extends eui.Component implements  eui.UIComponent {
 			this.parent.removeChild(this);
 		}
 		else{
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click66( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click67( iStatus:number ){
         if(this.pro==1&&iStatus==1){
-			this.queenWord.text="竟然答对了！那黑桃A住哪？";
+			this.queenWord.text="“竟然答对了！那黑桃A住哪？”";
 			this.pro++;
 		}
-		else if(this.pro==0&&iStatus==1){this.queenWord.text="我要把你变成蚂蚁！";}
-		else if(this.pro==2&&iStatus==1){this.queenWord.text="我要把你变成蚂蚁！";}
+		else if(this.pro==0&&iStatus==1){this.queenWord.text="“我要把你变成蚂蚁！”";}
+		else if(this.pro==2&&iStatus==1){this.queenWord.text="”我要把你变成蚂蚁！“";}
     }
 	private click68( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click69( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click70( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click71( iStatus:number ){
 		if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click72( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click73( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click74( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 	private click75( iStatus:number ){
         if(iStatus==1){
-			this.queenWord.text="我要把你变成蚂蚁！";
+			this.queenWord.text="“我要把你变成蚂蚁！”";
 		}
     }
 }

@@ -172,15 +172,15 @@ class Main extends eui.UILayer {
         // textfield.y = 135;
         // this.textfield = textfield;
 
-        let button = new eui.Button();
-        button.label = "Click!";
-        button.horizontalCenter = 0;
-        button.verticalCenter = 0;
-        this.addChild(button);
-        button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        // let button = new eui.Button();
+        // button.label = "Click!";
+        // button.horizontalCenter = 0;
+        // button.verticalCenter = 0;
+        // this.addChild(button);
+        // button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
 
-        // this.addChild(new welcomeScene());
-        // alert("哈哈哈哈");
+        this.parent.addChild(new welcomeScene());
+        this.parent.removeChild(this);
     }
     
     
@@ -289,9 +289,6 @@ class Main extends eui.UILayer {
 
         // this.parent.addChild(new SceneBsDialog(0));
         // this.parent.removeChild(this);
-
-        this.parent.addChild(new welcomeScene());
-        this.parent.removeChild(this);
 }
 
     private onPostComplete(event:egret.Event):void {
