@@ -49,7 +49,7 @@ class syz_first_scene extends eui.Component{
                 this.dialog.text = "好吧......果然是爱丽丝梦游仙境的剧情";
                 break;
             default:
-                this.dialog.text = "default";
+                this.dialog.text = "好吧......果然是爱丽丝梦游仙境的剧情";
                 break;
         }
         

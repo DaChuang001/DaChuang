@@ -34,7 +34,7 @@ class syz_forth_scene extends eui.Component{
                 this.parent.addChild(new SceneBsDialog(0));
                 this.parent.removeChild(this);       
             default:
-                this.dialog.text = "default";
+                this.dialog.text = "我们走吧";
                 break;
         }
         
