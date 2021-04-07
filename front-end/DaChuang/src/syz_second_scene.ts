@@ -33,7 +33,7 @@ class syz_second_scene extends eui.Component{
                 this.dialog.text = "奇怪，兔子先生怎么不见了呢？";
                 break;                
             default:
-                this.dialog.text = "default";
+                this.dialog.text = "奇怪，兔子先生怎么不见了呢？";
                 break;
         }
         
