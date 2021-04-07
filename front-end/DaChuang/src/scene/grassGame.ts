@@ -1,3 +1,5 @@
+import { RoomateScene } from "./RoomateScene";
+
 class grassGame extends eui.Component implements  eui.UIComponent {
 	public house65:eui.Image;
 	public house66:eui.Image;
@@ -162,3 +164,4 @@ class grassGame extends eui.Component implements  eui.UIComponent {
 		}
     }
 }
+export{grassGame}

@@ -1,4 +1,5 @@
 import { MyButton } from "../component/MyButton";
+import { grassGame } from "./grassGame";
 
 class Dormitory extends eui.Component implements  eui.UIComponent {
 	public textLabel:eui.Label; 

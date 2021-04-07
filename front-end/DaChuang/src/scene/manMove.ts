@@ -1,3 +1,4 @@
+import { finalRoom } from "./finalRoom";
 class manMove extends eui.Component implements  eui.UIComponent {
 	public queenWord:eui.Label;
 	public pro:number;
@@ -30,3 +31,4 @@ class manMove extends eui.Component implements  eui.UIComponent {
 		this.parent.removeChild(this);
 	}
 }
+export{manMove}

@@ -30,6 +30,8 @@
 import {SceneBsDialog} from "./scene/SceneBsDialog"
 import {Dormitory} from "./scene/Dormitory"
 import { syz_first_scene } from "./syz_first_scene";
+import { chaptersScene } from "./scene/chaptersScene";
+import { welcomeScene } from "./scene/welcomeScene";
 
 class Main extends eui.UILayer {
 
@@ -113,62 +115,62 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        let sky = this.createBitmapByName("bg_jpg");
-        this.addChild(sky);
-        let stageW = this.stage.stageWidth;
-        let stageH = this.stage.stageHeight;
-        sky.width = stageW;
-        sky.height = stageH;
+        // let sky = this.createBitmapByName("bg_jpg");
+        // this.addChild(sky);
+        // let stageW = this.stage.stageWidth;
+        // let stageH = this.stage.stageHeight;
+        // sky.width = stageW;
+        // sky.height = stageH;
 
-        let topMask = new egret.Shape();
-        topMask.graphics.beginFill(0x000000, 0.5);
-        topMask.graphics.drawRect(0, 0, stageW, 172);
-        topMask.graphics.endFill();
-        topMask.y = 33;
-        this.addChild(topMask);
+        // let topMask = new egret.Shape();
+        // topMask.graphics.beginFill(0x000000, 0.5);
+        // topMask.graphics.drawRect(0, 0, stageW, 172);
+        // topMask.graphics.endFill();
+        // topMask.y = 33;
+        // this.addChild(topMask);
 
-        let icon: egret.Bitmap = this.createBitmapByName("egret_icon_png");
-        this.addChild(icon);
-        icon.x = 26;
-        icon.y = 33;
+        // let icon: egret.Bitmap = this.createBitmapByName("egret_icon_png");
+        // this.addChild(icon);
+        // icon.x = 26;
+        // icon.y = 33;
 
-        let line = new egret.Shape();
-        line.graphics.lineStyle(2, 0xffffff);
-        line.graphics.moveTo(0, 0);
-        line.graphics.lineTo(0, 117);
-        line.graphics.endFill();
-        line.x = 172;
-        line.y = 61;
-        this.addChild(line);
+        // let line = new egret.Shape();
+        // line.graphics.lineStyle(2, 0xffffff);
+        // line.graphics.moveTo(0, 0);
+        // line.graphics.lineTo(0, 117);
+        // line.graphics.endFill();
+        // line.x = 172;
+        // line.y = 61;
+        // this.addChild(line);
         
     
-        this.colorLabel = new egret.TextField();
-        this.colorLabel.textColor = 0xffffff;
-        this.colorLabel.width = stageW - 172;
-        this.colorLabel.textAlign = "center";
-        this.colorLabel.text = "Hello Egret";
-        this.colorLabel.size = 24;
-        this.colorLabel.x = 172;
-        this.colorLabel.y = 80;
-        this.addChild(this.colorLabel);
+        // this.colorLabel = new egret.TextField();
+        // this.colorLabel.textColor = 0xffffff;
+        // this.colorLabel.width = stageW - 172;
+        // this.colorLabel.textAlign = "center";
+        // this.colorLabel.text = "Hello Egret";
+        // this.colorLabel.size = 24;
+        // this.colorLabel.x = 172;
+        // this.colorLabel.y = 80;
+        // this.addChild(this.colorLabel);
         
-        /// 轻触舞台以改变位图文本所用文字
-        this.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
-            this.updateBitmapTextContent();
-        }, this );
+        // /// 轻触舞台以改变位图文本所用文字
+        // this.addEventListener( egret.TouchEvent.TOUCH_TAP, ( evt:egret.TouchEvent )=>{
+        //     this.updateBitmapTextContent();
+        // }, this );
         
-        //this.updateBitmapTextContent();
+        // //this.updateBitmapTextContent();
 
-        let textfield = new egret.TextField();
-        this.addChild(textfield);
-        textfield.alpha = 0;
-        textfield.width = stageW - 172;
-        textfield.textAlign = egret.HorizontalAlign.CENTER;
-        textfield.size = 24;
-        textfield.textColor = 0xffffff;
-        textfield.x = 172;
-        textfield.y = 135;
-        this.textfield = textfield;
+        // let textfield = new egret.TextField();
+        // this.addChild(textfield);
+        // textfield.alpha = 0;
+        // textfield.width = stageW - 172;
+        // textfield.textAlign = egret.HorizontalAlign.CENTER;
+        // textfield.size = 24;
+        // textfield.textColor = 0xffffff;
+        // textfield.x = 172;
+        // textfield.y = 135;
+        // this.textfield = textfield;
 
         let button = new eui.Button();
         button.label = "Click!";
@@ -176,6 +178,9 @@ class Main extends eui.UILayer {
         button.verticalCenter = 0;
         this.addChild(button);
         button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+
+        // this.addChild(new welcomeScene());
+        // alert("哈哈哈哈");
     }
     
     
@@ -279,13 +284,15 @@ class Main extends eui.UILayer {
         //   request.addEventListener(egret.ProgressEvent.PROGRESS,this.onPostProgress,this);
 
         
-        this.parent.addChild(new syz_first_scene());
-        this.parent.removeChild(this);
+        // this.parent.addChild(new syz_first_scene());
+        // this.parent.removeChild(this);
 
         // this.parent.addChild(new SceneBsDialog(0));
         // this.parent.removeChild(this);
 
-            }
+        this.parent.addChild(new welcomeScene());
+        this.parent.removeChild(this);
+}
 
     private onPostComplete(event:egret.Event):void {
         var request = <egret.HttpRequest>event.currentTarget;
@@ -295,7 +302,8 @@ class Main extends eui.UILayer {
         alert(progress);
         switch(progress){
             case "1":
-                alert("yuezeng");
+                this.parent.addChild(new syz_first_scene());
+                this.parent.removeChild(this);
                 break;
             case "2":
                 this.parent.addChild(new SceneBsDialog(0));

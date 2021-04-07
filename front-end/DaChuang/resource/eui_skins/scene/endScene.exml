@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.endScene"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="sky_jpg" x="0" y="0" width="1440" height="900" alpha="0.8"/>
+	<e:Image source="sky_png" x="0" y="0" width="1440" height="900"/>
+	<e:Image source="nebula_png" x="408.598" y="147.797" width="721.409" height="545.607"/>
+	<e:Label text="空间转移中......" x="827.193" y="626.799" width="464.016" height="123.604" size="60" verticalAlign="middle" textAlign="center"/>
+	<e:Label text="（点击进入下一章节）" x="886.793" y="743.998" size="50" verticalAlign="middle" textAlign="center"/>
+</e:Skin>

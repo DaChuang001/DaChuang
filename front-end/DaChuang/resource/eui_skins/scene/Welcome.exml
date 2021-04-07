@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.Welcome"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="welcome_jpg" x="0" y="0" width="1440" height="900"/>
+	<e:Image source="elfin_png" x="211.674" y="605.424" width="294.387" height="299.162"/>
+	<e:Image source="girl_png" x="14.743" y="521.153" width="331.161" height="319.225"/>
+	<e:Label text="算法宇宙之" x="415.065" y="172.323" size="70" verticalAlign="middle" textAlign="center" width="414.709" height="92.967"/>
+	<e:Label text="寻找失落的碎片" x="714.335" y="286.904" size="50"/>
+	<e:Image id="myButton" source="myButton_png" x="582.226" y="433.469" width="247.548" height="117.095"/>
+	<e:Label id="buttonLabel" text="开始游戏" x="606" y="467.905" size="50"/>
+	<e:Image source="huli_png" x="940.947" y="234.579" width="553.099" height="553.42"/>
+	<e:Image source="fanpai_png" x="1064.335" y="492.905"/>
+</e:Skin>

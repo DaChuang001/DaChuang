@@ -58,7 +58,15 @@ declare module skins{
 	class BS_gameResult extends eui.Skin{
 	}
 }
+declare module skins{
+	class chaptersScene extends eui.Skin{
+	}
+}
 declare class SceneBeginSkin extends eui.Skin{
+}
+declare module skins{
+	class endScene extends eui.Skin{
+	}
 }
 declare class finalRoomSkin extends eui.Skin{
 }
@@ -67,6 +75,10 @@ declare class grassGameSkin extends eui.Skin{
 declare class RoomateSceneSkin extends eui.Skin{
 }
 declare class TrySceneSkin extends eui.Skin{
+}
+declare module skins{
+	class Welcome extends eui.Skin{
+	}
 }
 declare module skins{
 	class ScrollerSkin extends eui.Skin{

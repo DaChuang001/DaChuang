@@ -1,3 +1,5 @@
+import { manMove } from "./manMove";
+
 class RoomateScene extends eui.Component implements  eui.UIComponent {
 	public textLabel:eui.Label; 
 	public character:eui.Image;
@@ -148,3 +150,4 @@ class RoomateScene extends eui.Component implements  eui.UIComponent {
 		][ this.pro ];
 	}
 }
+export{RoomateScene}

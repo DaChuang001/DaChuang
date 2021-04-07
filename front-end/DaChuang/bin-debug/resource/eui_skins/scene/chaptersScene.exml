@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="skins.chaptersScene"
+	 width="1440"
+	height="900" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="sky_png" x="0" y="0" width="1440" height="900"/>
+	<e:Image id="searchStar" source="c5_png" y="498.553" width="291.159" height="269.801" rotation="0.104" horizontalCenter="-24"/>
+	<e:Image source="c4_png" x="1318.57" y="118.532" width="258.438" height="261.95"/>
+	<e:Image source="c1_png" x="990.798" y="379.936" width="223.689" height="215.685" rotation="0.339"/>
+	<e:Image source="c6_png" x="-224.318" y="47.641" width="431.912" height="383.78"/>
+	<e:Image source="c2_png" x="191.694" y="362.202" width="225.332" height="223.718"/>
+	<e:Label text="当前章节" y="86.822" width="414.558" height="122.879" verticalAlign="middle" textAlign="center" size="60" horizontalCenter="0"/>
+	<e:Label text="搜索" y="293.376" size="50" width="147.847" height="66.887" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+	<e:Image source="board2_png" x="382.358" y="-42.472" width="661.324" height="517.256"/>
+</e:Skin>

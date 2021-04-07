@@ -1,7 +1,7 @@
-class TryScene extends eui.Component implements  eui.UIComponent {
+class endScene extends eui.Component implements  eui.UIComponent {
 	public constructor() {
 		super();
-		this.skinName="resource/eui_skins/scene/endScene.exml"
+        this.skinName="resource/eui_skins/scene/endScene.exml"
 	}
 
 	protected partAdded(partName:string,instance:any):void
@@ -16,3 +16,4 @@ class TryScene extends eui.Component implements  eui.UIComponent {
 	}
 	
 }
+export{endScene}

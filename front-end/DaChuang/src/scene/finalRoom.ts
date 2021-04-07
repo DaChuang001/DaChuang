@@ -1,3 +1,5 @@
+import "./endScene"
+import { endScene } from "./endScene";
 class finalRoom extends eui.Component implements  eui.UIComponent {
 	public textLabel:eui.Label; 
 	public character:eui.Image;
@@ -53,7 +55,11 @@ class finalRoom extends eui.Component implements  eui.UIComponent {
 			this.characterName.text="出色蒂诺";
 			this.character.source="helper_png";
 			this.textLabel.text="好了，我们赶紧回到主空间，把这块碎片补上吧。";
+		}else if(this.pro==4){
+			this.parent.addChild(new endScene());
+			this.parent.removeChild(this);
 		}
+
 
 		this.addEventListener(egret.TouchEvent.TOUCH_TAP,this.updateTextContent,this);
 	}
@@ -89,6 +95,10 @@ class finalRoom extends eui.Component implements  eui.UIComponent {
 			this.characterName.text="出色蒂诺";
 			this.character.source="helper_png";
 			this.textLabel.text="好了，我们赶紧回到主空间，把这块碎片补上吧。";
+		}else if(this.pro==4){
+			this.parent.addChild(new endScene());
+			this.parent.removeChild(this);
 		}
 	}
 }
+export{finalRoom}
