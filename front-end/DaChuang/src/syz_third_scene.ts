@@ -41,7 +41,7 @@ class syz_third_scene extends eui.Component{
                 this.dialog.text = "或许从第一扇开始，按顺序比较，会更加清晰。";
                 break;                      
             default:
-                this.dialog.text = "default";
+                this.dialog.text = "或许从第一扇开始，按顺序比较，会更加清晰。";
                 break;
         }
     }
