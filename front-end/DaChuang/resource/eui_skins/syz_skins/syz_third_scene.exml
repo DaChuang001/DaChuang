@@ -5,6 +5,7 @@
 	<e:Image id="bg" left="0" right="0" top="0" bottom="0" source="bg_12-15_jpg"/>
     <e:Image id="dia_bg" height="300" y="600" left="0" right="0" source="dialog_bg_png"/>
 	<e:Image id="NPC_pic" width="300" height="300" x="0" y="600" source="me_png"/>
-	<e:Label id="dialog" y="600" touchEnabled="false" textColor="0x000000" right="0" height="300" width="1140" size="40" textAlign="center" verticalAlign="middle" text="这里只有一张三条腿的玻璃小桌子。桌上没有别的东西，只有一把小小的金钥匙"/>
+	<e:Label id="NPC_name" x="300" y="600" height="100" width="1140" text="#：" size="40" verticalAlign="middle"/>	
+    <e:Label id="dialog" touchEnabled="false" right="0" height="200" width="1140" size="40" textAlign="center" verticalAlign="middle" text="这里只有一张三条腿的玻璃小桌子。桌上没有别的东西，只有一把小小的金钥匙" bottom="0" textColor="0xFFFFFF"/>
     <e:Button id="switch_dia_btn" label="Button" left="0" right="0" top="0" bottom="0" alpha="0"/>
 </e:Skin>
