@@ -5,6 +5,7 @@
 	<e:Image id="bg" left="0" right="0" top="0" bottom="0" source="bg_16-25_jpg"/>
 	<e:Image id="dia_bg" height="300" y="600" source="dialog_bg_png" left="0" right="0"/>
 	<e:Image id="NPC_pic" width="300" height="300" x="0" y="600" source="angel_png"/>
-	<e:Label id="dialog" y="600" touchEnabled="false" textColor="0x000000" right="0" height="300" width="1140" size="40" textAlign="center" verticalAlign="middle" text="这就是顺序查找的过程了"/>
+	<e:Label id="NPC_name" x="300" y="600" height="100" width="1140" text="Eric:" size="40" verticalAlign="middle"/>	
+    <e:Label id="dialog" touchEnabled="false" right="0" height="200" width="1140" size="40" textAlign="center" verticalAlign="middle" text="这就是顺序查找的过程了" textColor="0xFFFFFF" bottom="0"/>
     <e:Button id="switch_dia_btn" label="Button" left="0" right="0" top="0" bottom="0" alpha="0"/>
 </e:Skin>

@@ -8,6 +8,7 @@ class syz_second_scene extends eui.Component{
 
     public switch_dia_btn: eui.Button;
     public NPC_pic: eui.Image;
+    public NPC_name: eui.Label;
     public dialog: eui.Label;
     public point: number = 0; 
 
@@ -21,6 +22,7 @@ class syz_second_scene extends eui.Component{
         switch(this.point){
             case 0:
                 this.NPC_pic.source = "angel_png"
+                this.NPC_name.text = "Eric："
                 this.dialog.text = "你来到了一间长长的低矮大厅，天花板上挂着一长排的灯。大厅的一边有8扇门，但都是锁着的，一个也打不开";
                 break;
             case 1:
@@ -30,6 +32,7 @@ class syz_second_scene extends eui.Component{
                 game_btn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.gameBtnClick,this);
                 this.addChild(game_btn);
                 this.NPC_pic.source = "me_png"
+                this.NPC_name.text = "#："
                 this.dialog.text = "奇怪，兔子先生怎么不见了呢？";
                 break;                
             default:
